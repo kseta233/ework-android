@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.view.SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlDirectorSquare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_square_rect_line"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_normal"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground">
+        <LinearLayout
+            android:layout_width="@dimen/value_56"
+            android:layout_height="@dimen/value_56"
+            android:background="@drawable/bg_rounded_gray"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/padding">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/value_40dp"
+                android:layout_height="@dimen/value_40dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_add_a_photo_black_48dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".activities.TestSurfaceViewActivity" >-->
+
+    <!--<com.kreditplus.kpm.customcomponents.AspectFrameLayout-->
+    <!--android:id="@+id/continuousCapture_afl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true" >-->
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/surfaceView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center" />-->
+    <!--</com.kreditplus.kpm.customcomponents.AspectFrameLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivTest"-->
+    <!--android:layout_width="@dimen/value_100dp"-->
+    <!--android:layout_height="@dimen/value_100dp"-->
+    <!--android:layout_margin="@dimen/margin"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/capture"-->
+    <!--android:layout_width="@dimen/value_56"-->
+    <!--android:layout_height="@dimen/value_56"-->
+    <!--android:layout_margin="@dimen/margin_normal"-->
+    <!--android:padding="@dimen/padding"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center"-->
+    <!--android:onClick="captureImage"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@drawable/bg_rounded_white_transparent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/value_40dp"-->
+    <!--android:layout_height="@dimen/value_40dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@mipmap/ic_add_a_photo_black_48dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->

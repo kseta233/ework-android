@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin">
+
+        <LinearLayout
+            android:layout_width="@dimen/value_60"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:id="@+id/ll1">
+            <TextView
+                android:id="@+id/tvItemTimelineDayMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@color/text_dark"/>
+            <TextView
+                android:id="@+id/tvItemTimelineYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@color/text_dark"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ll1">
+            <ImageView
+                android:id="@+id/ivItemTimeline"
+                android:layout_width="@dimen/value_xxbig"
+                android:layout_height="@dimen/value_xxbig"
+                android:padding="@dimen/padding_small"
+                android:src="@mipmap/ic_adjust_black_18dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ll2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/padding"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tvItemTimelineTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textStyle="bold"
+                android:text="@string/pengajuan_kredit"
+                android:textSize="@dimen/text"
+                android:textColor="@color/text_dark"/>
+
+            <TextView
+                android:id="@+id/tvItemTimelineContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_pengajuan_kredit_item"
+                android:textSize="@dimen/text"
+                android:textColor="@color/text_default"/>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

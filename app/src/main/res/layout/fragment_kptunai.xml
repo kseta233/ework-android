@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/page_background"-->
+    <!--android:scrollbars="none">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewKVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llKpTunaiContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/page_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xsmall"
+                        android:layout_marginLeft="@dimen/margin_xsmall"
+                        android:layout_marginRight="@dimen/margin_xsmall"
+                        android:layout_marginTop="@dimen/margin"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground">
+
+                        <include layout="@layout/item_card_kptunai" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <!--ITEM-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xsmall"
+                        android:layout_marginLeft="@dimen/margin_xsmall"
+                        android:layout_marginRight="@dimen/margin_xsmall"
+                        android:layout_marginTop="@dimen/margin"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/rlUbahPinKPTunai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_bottom_line">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView"
+                                        android:layout_toStartOf="@+id/imageView"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/ubah_pin_kptunai"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlLupaPinKPTunai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView3"
+                                        android:layout_toStartOf="@+id/imageView3"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/lupa_pin_kptunai"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <!--NEW SECTION-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xsmall"
+                        android:layout_marginLeft="@dimen/margin_xsmall"
+                        android:layout_marginRight="@dimen/margin_xsmall"
+                        android:layout_marginTop="@dimen/margin"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/eduplex_blue_main"
+                                android:padding="@dimen/padding_small"
+                                android:text="@string/gunakan_kptunai"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/text_small" />
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:id="@+id/rlBayarAngsuranku"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/bg_bottom_line">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView12"
+                                        android:layout_toStartOf="@+id/imageView12"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/bayar_angsuranku"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:id="@+id/rlTarikKPTunaiViaCabang"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_bottom_line">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView2"
+                                        android:layout_toStartOf="@+id/imageView2"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/tarik_kptunai_via_cabang"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:id="@+id/rlReetTarikTunai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_toLeftOf="@+id/imageView8"
+                                        android:layout_toStartOf="@+id/imageView8"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/reset_kptunai"
+                                        android:textColor="@color/text_default"
+                                        android:textSize="@dimen/text_normal" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <!--NEW SECTION-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xsmall"
+                        android:layout_marginLeft="@dimen/margin_xsmall"
+                        android:layout_marginRight="@dimen/margin_xsmall"
+                        android:layout_marginTop="@dimen/margin"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/eduplex_blue_main"
+                                android:padding="@dimen/padding_small"
+                                android:text="@string/isi_kptunai"
+                                android:textColor="@color/text_white"
+                                android:textSize="@dimen/text_small" />
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:id="@+id/rlTebusKodeReferal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_bottom_line">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView4"
+                                        android:layout_toStartOf="@+id/imageView4"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/tebus_kode_referal"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:id="@+id/rlTebusKodeVoucher"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_bottom_line"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_toLeftOf="@+id/imageView5"
+                                        android:layout_toStartOf="@+id/imageView5"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/tebus_kode_voucher"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <!--ITEM-->
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:id="@+id/rlIsiKPTunai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:selectableItemBackground"
+                                android:clickable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/imageView6"
+                                        android:layout_toStartOf="@+id/imageView6"
+                                        android:gravity="center_vertical"
+                                        android:padding="@dimen/padding"
+                                        android:singleLine="true"
+                                        android:text="@string/isi_kptunai"
+                                        android:textColor="@color/text_dark"
+                                        android:textSize="@dimen/text" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="@dimen/margin_small"
+                                        android:src="@mipmap/ic_chevron_black" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llBlankSlateKPTunai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:layout_toStartOf="@+id/imageView6"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding"
+                android:singleLine="true"
+                android:text="@string/harap_login_kptunai"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tvLoginKpTunai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:layout_toStartOf="@+id/imageView6"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding"
+                android:singleLine="true"
+                android:text="@string/login"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+</android.support.v4.widget.SwipeRefreshLayout>

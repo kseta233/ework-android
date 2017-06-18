@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/eduplex_yellow_grad_end">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/bg_rounded_white_transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal">
+
+                <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+                <LinearLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="0px"
+                    android:layout_height="0px"/>
+
+                <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+                to prevent the dummy from receiving focus again -->
+
+                <EditText
+                    android:id="@+id/etLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nextFocusUp="@id/etLoginEmail"
+                    android:nextFocusLeft="@id/etLoginEmail"
+                    android:drawableLeft="@mipmap/mail_icon"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_default"
+                    android:textSize="@dimen/text"
+                    android:theme="@style/MyTextInputLayoutStyle" />
+
+                <EditText
+                    android:id="@+id/etLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin"
+                    android:drawableLeft="@mipmap/lock_icon"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/padding_normal"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark"
+                    android:textColorHint="@color/text_default"
+                    android:textSize="@dimen/text"
+                    android:theme="@style/MyTextInputLayoutStyle" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:id="@+id/tvLoginForgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="@dimen/padding"
+                        android:text="Ganti IP?"
+                        android:textSize="@dimen/text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_large"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/bg_border_rectangle_blue_fill_click">
+
+                    <TextView
+                        android:id="@+id/tvLoginLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/sign_in_uc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tvOr"
+                        android:background="@color/gray_line" />
+
+                    <TextView
+                        android:id="@+id/tvOr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin"
+                        android:text="@string/or_uc" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tvOr"
+                        android:background="@color/gray_line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_large"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@drawable/bg_border_rectangle_gray_fill_click">
+
+                    <TextView
+                        android:id="@+id/tvLoginSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/sign_up_uc"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvLoginAsGuest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:paddingTop="@dimen/padding_small"
+                    android:text="@string/login_as_guest"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+

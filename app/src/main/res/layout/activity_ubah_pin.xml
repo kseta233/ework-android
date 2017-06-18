@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical"
+    tools:context="com.ework.eduplex.activities.setting.UbahPINActivity">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/item_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/include3"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilUbahPinPinLama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginBottom="@dimen/margin">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pin_lama"
+                    android:inputType="numberPassword"
+                    android:maxLength="@integer/pin_max_length"
+                    android:paddingLeft="@dimen/padding"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilUbahPinPinBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyTextInputLayoutStyle"
+                android:layout_marginBottom="@dimen/margin">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pin_baru"
+                    android:inputType="numberPassword"
+                    android:maxLength="@integer/pin_max_length"
+                    android:paddingLeft="@dimen/padding"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilUbahPinKonfirmasiPinBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin"
+                android:theme="@style/MyTextInputLayoutStyle">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/konfirmasi_pin_baru"
+                    android:inputType="numberPassword"
+                    android:maxLength="@integer/pin_max_length"
+                    android:paddingLeft="@dimen/padding"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_large"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_border_rectangle_yellow_fill_click">
+
+        <TextView
+            android:id="@+id/tvUbahPinSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/simpan_uc"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+</RelativeLayout>

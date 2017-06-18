@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin"
+    android:background="@color/white"
+    android:foreground="?android:selectableItemBackground"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_big">
+
+        <ImageView
+            android:id="@+id/ivItemFoto"
+            android:layout_width="@dimen/value_80"
+            android:layout_height="@dimen/value_80"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/ivItemFoto"
+            android:layout_toEndOf="@+id/ivItemFoto">
+
+            <TextView
+                android:id="@+id/tvHapusAset"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text"
+                android:text="@string/hapus_uc"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:textColor="@color/text_blue"
+                android:paddingTop="@dimen/padding_small"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:clickable="true"
+                android:background="?android:selectableItemBackground"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTextBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/merk_asetku"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/tvItemMerk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tvTextBrand"
+                    android:layout_toRightOf="@+id/tvTextBrand"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTextTipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/tipe_asetku"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/tvItemTipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tvTextTipe"
+                    android:layout_toRightOf="@+id/tvTextTipe"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTextNilaiOTR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/nilai_otr_asetku"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/tvItemNilaiOTR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tvTextNilaiOTR"
+                    android:layout_toRightOf="@+id/tvTextNilaiOTR"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ivCardVoucher"
+        android:layout_height="180dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/voucher" />
+
+    <LinearLayout
+        android:layout_alignBottom="@+id/ivCardVoucher"
+        android:layout_alignTop="@+id/ivCardVoucher"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center|bottom"
+            android:id="@+id/tvKodeReferensi"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_xsmall" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvSisaSaldo"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text"
+            android:text="Rp.0"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

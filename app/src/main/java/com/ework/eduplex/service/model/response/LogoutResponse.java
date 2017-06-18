@@ -1,0 +1,26 @@
+package com.ework.eduplex.service.model.response;
+
+import com.google.gson.annotations.SerializedName;
+import com.ework.eduplex.service.model.Meta;
+
+/**
+ * Created by eWork on 4/19/2016.
+ */
+public class LogoutResponse {
+
+    @SerializedName("meta")
+    private Meta meta;
+
+    public Meta getMeta() {
+        return meta;
+    }
+
+    public void setMeta(Meta meta) {
+        this.meta = meta;
+    }
+
+    public LogoutResponse(Meta meta) {
+
+        this.meta = meta;
+    }
+}

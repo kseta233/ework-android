@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context="com.ework.eduplex.activities.supportandnotification.SuaraKonsumenActivity">
+
+    <include layout="@layout/item_toolbar"
+        android:id="@+id/include18" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:background="@color/white"
+        android:layout_above="@+id/relativeLayout5"
+        android:layout_below="@+id/include18">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/jenis_surat"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_small" />
+
+                <Spinner
+                    android:id="@+id/spinnerSuaraKonsumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"></Spinner>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyTextInputLayoutStyle">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/subject"
+                        android:maxLength="@integer/subject_max_length"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/etSuaraKonsumenContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_200dp"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/bg_border_text_area"
+                    android:gravity="top"
+                    android:padding="@dimen/padding"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text"
+                    android:theme="@style/MyTextInputLayoutStyle" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_large"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_border_rectangle_yellow_fill_click"
+        android:id="@+id/relativeLayout5">
+
+        <TextView
+            android:id="@+id/tvSuaraKonsumenKirim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/kirim_uc"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+</RelativeLayout>

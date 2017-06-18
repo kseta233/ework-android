@@ -1,0 +1,604 @@
+<resources>
+    <string name="app_name">Eduplex Cafe Mobile</string>
+
+    <!--KEYS-->
+
+    <!--DUMMY STRING-->
+    <string name="loren_ipsum"></string>
+    <string name="sample_lorem_ipsum"></string>
+    <string name="sample_name"></string>
+
+    <string name="sample_id"></string>
+    <string name="sample_harga_total"></string>
+    <string name="sample_daymonth"></string>
+    <string name="sample_year"></string>
+    <string name="sample_pengajuan_kredit_item"></string>
+    <string name="sample_item_name"></string>
+    <string name="sample_amount"></string>
+    <string name="sample_url"></string>
+    <string name="sample_msg_title"></string>
+    <string name="sample_date"></string>
+    <string name="sample_jumlah_kebutuhan"></string>
+    <string name="sample_cicilan"></string>
+    <string name="sample_no_agreement"></string>
+    <string name="sample_produk_kpr"></string>
+
+    <string name="pengaturan_masuk_aplikasi">Application Setting</string>
+    <string name="selalu_login">Always Login</string>
+
+    <!--SHARE STRING-->
+    <string name="share_text_1">Download Eduplex mobile app("</string>
+    <string name="share_text_2">) right now, put this refferal code in: "</string>
+    <string name="share_text_3">, to get K-Voucher bonus.</string>
+    <string name="about_kpm">Welcome to Eduplex Café, a Café and Study - Co-working Space in Bandung! Newly established in 2016, Eduplex is an education themed café and co-working</string>
+    <string name="err_verifikasi_timeout">Unfortunately, your code verification request can\'t be done now (request timeout), please try again.</string>
+
+    <!--ERROR MESSAGE-->
+    <string name="err_harap_diisi">Please field the empty field</string>
+    <string name="err_tenor_min_60">Minimum tenor for KPR is 60</string>
+    <string name="err_tenor_max_240">Maximum tenor for KPR is 240</string>
+    <string name="err_percentage_max">Format for percentage is invalid, the valid one for example is 25.26</string>
+    <string name="err_no_ktp_min">Minimum length for KTP number is 16 digits</string>
+    <string name="err_no_hp_min">Minimum length for Handphone number is 10 digits</string>
+    <string name="err_no_telp_min">Minimum length for telephone number is 7 digits</string>
+    <string name="err_kode_pos_min">Minimum length for Kode Pos is 5 digits</string>
+    <string name="err_format_no_hp">Handphone number\'s format must be like 08xxx</string>
+    <string name="server_undermaintenance">Sorry your request can not be processed at this time, please try again later.</string>
+    <string name="err_tidak_ada_data">No data yet.</string>
+    <string name="err_500">Sorry your request can not be processed at this time, please try again later.</string>
+    <string name="err_data_tidak_sesuai_lengkap">Data from server is not valid or complete yet.</string>
+    <string name="err_data_kelurahan_tidak_ditemukan">Kelurahan not found.</string>
+    <string name="err_data_region_index_0">Please fill in region data first.</string>
+    <string name="err_jumlah_kode_verifikasi_salah">SMS verification code length does not match</string>
+    <string name="err_registration_failed">Error registration data. Registration failed.</string>
+
+    <!--ALERT STRING-->
+    <string name="alert">Alert</string>
+    <string name="alert_anda_yakin_hapus">Are you sure want to delete it?</string>
+    <string name="harap_login_user">Please login as a user</string>
+    <string name="alert_jumlah_foto_berlebih">The number of photos that you\'ve been put in exceeds the maximum limit</string>
+    <string name="alert_edit_profile_success">Your profile has been saved</string>
+    <string name="alert_edit_profile_fail">Your profile could not be saved</string>
+    <string name="alert_permission_reject">If you reject permission, you can not use this service. Please turn on permissions at [Setting] > [Permission].</string>
+    <string name="press_back_again">Press back button again to exit</string>
+    <string name="alert_fill_all_field">All fields must be filled</string>
+    <string name="alert_validate_new_pin">The new PIN confirmation is not the same</string>
+    <string name="alert_ubah_pin_gagal">Failed to change your PIN</string>
+    <string name="alert_pin_must_6">Your PIN must consist of 6 numbers</string>
+    <string name="alert_congratulation_uc">CONGRATULATIONS</string>
+    <string name="alert_connection_fail">Connection failed, please make sure your device is connected to the internet</string>
+    <string name="ok_uc">OK</string>
+    <string name="maaf_terjadi_kesalahan_uc">Sorry, occured error in application. Please press back button below.</string>
+    <string name="back_uc">BACK</string>
+    <string name="cancel_uc">CANCEL</string>
+    <string name="loading">Loading..</string>
+    <string name="relogin">Please wait, re-login the app..</string>
+    <string name="alert_validate_new_password">The new password confirmation is not the same</string>
+    <string name="alert_ubah_password_gagal">Filed to change your password</string>
+    <string name="alert_password_must_6">Your password must consist at least 6 characters</string>
+    <string name="alert_email_harap_diisi">Please put your e-mail here</string>
+    <string name="alert_name_harap_diisi">Please put Full Name here</string>
+    <string name="alert_format_email_salah">Your e-mail format is not valid</string>
+    <string name="alert_tahun_minimal">The year field length must be 4 character</string>
+    <string name="alert_password_harap_diisi">Please fill in the password field</string>
+    <string name="alert_panjang_password_minimal">Minimum password length</string>
+    <string name="alert_karakter">character</string>
+    <string name="alert_login_gagal">Login failed, please check your username and password</string>
+    <string name="alert_request_gagal">Request failed</string>
+
+
+    <!--NAVIGATION MENU STRING-->
+    <string name="nav_group_eduplex">EDUPLEX</string>
+    <string name="nav_menu_web">Web</string>
+    <string name="nav_menu_kreditku">My Credit</string>
+    <string name="nav_menu_data_kreditku">Job Data</string>
+    <string name="nav_menu_cabang_terdekat">Location</string>
+
+    <string name="nav_group_dukungan">APPLICATION</string>
+    <string name="nav_menu_suara_konsumen">Customer Voice</string>
+    <string name="nav_menu_kotak_surat">Inbox</string>
+    <string name="nav_menu_faq">FAQ</string>
+
+    <string name="nav_group_aplikasi">APPLICATION</string>
+    <string name="nav_menu_pengaturan_aplikasi">Application Settings</string>
+    <string name="nav_menu_about">About Eduplex</string>
+    <string name="nav_menu_share">Share Eduplex Mobile</string>
+    <string name="nav_menu_logout">Logout</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+
+    <!--INTRODUCTION ACTIVITY-->
+
+    <!--LOGIN ACTIVITY-->
+    <string name="title_activity_login">Login</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in_uc">SIGN IN</string>
+    <string name="login_as_guest">Login as a guest</string>
+    <string name="login_as_guest_uc">LOGIN AS A GUEST</string>
+    <string name="guest">Guest</string>
+    <string name="awal_masuk_aplikasi">The first time you entered Eduplex mobile app</string>
+    <string name="awal_masuk_aplikasi_ket">This is the first time you entered Eduplex mobile app.</string>
+
+
+    <!--REGISTER DATA ACTIVITY-->
+    <string name="title_activity_register_data">Data Registration</string>
+    <string name="nama_lengkap">Full Name</string>
+    <string name="tanggal_lahir">Birthdate</string>
+    <string name="nomor_ktp">KTP number</string>
+    <string name="alamat_tinggal_sekarang">Current Address</string>
+    <string name="kelurahan">Kelurahan</string>
+    <string name="provinsi">Province</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kota">City</string>
+    <string name="kode_pos">Postal Code</string>
+    <string name="no_handphone">Handphone number</string>
+    <string name="telp_rumah">Home Telephone number</string>
+    <string name="pilih_provinsi">Select Province</string>
+    <string name="pilih_kota">Select City</string>
+    <string name="pilih_kecamatan">Select Kecamatan</string>
+    <string name="pilih_kelurahan">Select Kelurahan</string>
+    <string name="gagal_mengambil_data_server">Failed to retrieve data from server. Make sure you are connected to the internet.</string>
+    <string name="coba_lagi">Try again</string>
+
+    <!--REGISTER KEAMANAN ACTIVITY-->
+    <string name="title_activity_register_keamanan">Security Registration</string>
+    <string name="pin_anda">Your PIN</string>
+    <string name="lupa_pin">Forget PIN</string>
+    <string name="konfirmasi_pin_anda">Confirm your PIN</string>
+    <string name="petunjuk_sandi_rahasia">Secret word hint</string>
+    <string name="jawaban">Answer</string>
+    <string name="pertanyaan_keamanan">Secret Question</string>
+    <string name="daftar_uc">REGISTER</string>
+    <string name="lanjut_uc">NEXT</string>
+    <string name="pilih_pertanyaan_rahaasia">Select your secret question</string>
+
+    <!--HOME FRAGMENT-->
+    <string name="lihat_selengkapnya">See More</string>
+    <string name="produk_kami_uc">Our Service</string>
+    <string name="barang_terlaris_uc">Recommended menu</string>
+    <string name="home_frag_menu">Menu</string>
+    <string name="home_frag_meja">Table</string>
+    <string name="home_frag_topUp">Top Up</string>
+    <string name="home_frag_cashier">Cashier Call</string>
+    <!--<string name="mobil_bekas">Multiguna &amp; Modal Usaha</string>-->
+    <!--<string name="jasa">Jasa</string>-->
+    <!--<string name="modal_kerja">Modal Usaha</string>-->
+    <!--<string name="kpr">KPR</string>-->
+    <string name="search">Search Product</string>
+
+    <!--TIMELINE ACTIVITY-->
+    <string name="pengajuan_kredit">Credit Application</string>
+
+    <!--KPTUNAI ACTIVITY-->
+    <string name="ubah_pin_kptunai">Change K-Voucher PIN</string>
+    <string name="lupa_pin_kptunai">Forget K-Voucher PIN</string>
+    <string name="gunakan_kptunai">Use Eduplex Voucher</string>
+    <string name="bayar_angsuranku">Pay My Installment</string>
+    <string name="tarik_kptunai_via_cabang">Withdraw K-Voucher via Service Branch</string>
+    <string name="reset_kptunai">Reset K-Voucher</string>
+    <string name="isi_kptunai">Top-up Eduplex Voucher</string>
+    <string name="harap_login_kptunai">Please login to use this feature.</string>
+    <string name="tebus_kode_referal">Your friend\'s refferal code</string>
+    <string name="tebus_kode_voucher">Voucher code</string>
+    <string name="kode_referal_header">Refferal Code :\u0020</string>
+    <string name="sisa_angsuranku">My Remaining Installments</string>
+    <string name="alert_sisa_saldo">Sorry, your K-Voucher balance is not sufficient, your remaining balance is\u0020</string>
+
+    <!--MY ACCOUNT ACTIVITY-->
+    <string name="title_activity_my_account">My Account</string>
+    <string name="email">E-mail</string>
+    <string name="save_changes_up">SAVE CHANGES</string>
+    <string name="verifikasi_akunn">Verify Account</string>
+
+    <!--KATALOG DETAIL ACTIVITY-->
+    <string name="title_activity_katalog_item_detail">Menu Detail</string>
+    <string name="description_up">Description</string>
+    <string name="syarat_ketentuan_up">Terms and Conditions</string>
+    <string name="installments_up">Estimated Installment</string>
+    <string name="install_6">6X</string>
+    <string name="ajukan_kredit_up">SUBMIT CREDIT</string>
+    <string name="simulate_kpr_up">SIMULATE KPR</string>
+    <string name="per_bulan">/month</string>
+    <string name="syarat_uc">TERMS</string>
+    <string name="harga_dapat_berubah">The price could changes anytime</string>
+
+    <!--UBAH PIN ACTIVITY-->
+    <string name="title_activity_ubah_pin">Change PIN</string>
+    <string name="pin_lama">Old PIN</string>
+    <string name="pin_baru">New PIN</string>
+    <string name="konfirmasi_pin_baru">Confirm new PIN</string>
+    <string name="simpan_uc">SAVE</string>
+
+    <!--UBAH PASSWORD ACTIVITY-->
+    <string name="title_activity_ubah_password">Change Password</string>
+    <string name="password_lama">Old Password</string>
+    <string name="password_baru">New Password</string>
+    <string name="konfirmasi_password_baru">Confirm New Password</string>
+
+    <!--LUPA PIN ACTIVITY-->
+    <string name="title_activity_lupa_pin">Forget PIN</string>
+    <string name="reset_pin">Reset PIN</string>
+
+    <!--LUPA PASSWORD ACTIVITY-->
+    <string name="title_activity_lupa_password">Forget Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_gagal">Reset Password failed</string>
+
+    <!--PENGATURAN APLIKASI ACTIVITY-->
+    <string name="title_activity_pengaturan_aplikasi">Application Settings</string>
+    <string name="pengaturan_notifikasi">Notification Settings</string>
+    <string name="notifikasi_promo">Promo Notification</string>
+    <string name="pengaturan_bahasa">Language Setting</string>
+    <string name="notifikasi_angsuran">Installment Notification</string>
+    <string name="data_pengajuan_saya">My Submission Data</string>
+    <string name="simpan_data_pengajuan_saya">Save My Submission Data</string>
+    <string-array name="arr_pengaturan_bahasa">
+        <item>Bahasa Indonesia</item>
+        <item>English</item>
+    </string-array>
+
+    <!--SIGN UP ACTIVITY-->
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="login_uc">LOGIN</string>
+    <string name="full_name">Full name</string>
+    <string name="sign_up_uc">SIGN UP</string>
+    <string name="or_uc">OR</string>
+    <string name="by_signing_up">By signing up, I agree to Eduplex <b>Terms of Service</b> and <b>Privacy Policy</b></string>
+
+    <!--FAQ ACTIVITY-->
+    <string name="title_activity_faq">Chat Service</string>
+    <string name="title_terms_and_condition">Terms and Condition</string>
+
+    <!--INBOX ACTIVITY-->
+    <string name="title_activity_inbox">Inbox</string>
+
+    <!--INBOX DETAIL ACTIVITY-->
+    <string name="title_activity_inbox_detail">Inbox</string>
+    <string name="dari">From</string>
+    <string name="perihal">Subject</string>
+    <string name="balas_uc">REPLY</string>
+    <string name="mail_berhasil_dihapus">Mail deleted</string>
+    <string name="mail_gagal_dihapus">Delete mail failed</string>
+
+    <!--PENGAJUAN KREDIT KENDARAAN FORM-->
+    <string name="title_activity_pengajuan_kredit_form">Credit Submission</string>
+    <string name="merk_kendaraan">Brand</string>
+    <string name="tipe_kendaraan">Type</string>
+    <string name="deskripsi">Description</string>
+    <string name="tahun_kendaraan">Year</string>
+    <string name="lainnya">Notes</string>
+    <string name="asset_type">Type of your vehicle</string>
+    <string name="atas_nama">On Behalf of</string>
+    <string name="nilai_otr">OTR Price</string>
+    <string name="jumlah_kebutuhan">Total needed amount</string>
+    <string name="harga_total">Total Price</string>
+    <string name="cicilan_perbulan">Monthly Installment</string>
+    <string name="lanjutkan_uc">NEXT</string>
+    <string name="pilih_merek">Select brand :\u0020</string>
+    <string name="pilih_tipe_aset">Select type of asset :\u0020</string>
+    <string name="pilih_aset">Select Asset</string>
+    <string name="pilih_tahun">Select year :\u0020</string>
+    <string name="pilih_tipe">Select Type :\u0020</string>
+
+    <!--PENGAJUAN KREDIT KENDARAAN FOTO-->
+    <string name="title_activity_pengajuan_kredit_kendaraan_foto">Credit Submission</string>
+    <string name="foto_unit_kendaraan">Vehicle unit photo</string>
+    <string name="foto_stnk_bpkb">STNK/BPKB Photo</string>
+    <string name="ajukan_uc">SUBMIT</string>
+    <string name="jumlah_kebutuhan_65">Total needed amount exceeds the limit, the limit 65% from OTR price.</string>
+    <string name="select_photo_from">Take photo from :</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="delete">Delete</string>
+    <string name="delete_berhasil">Deleted</string>
+    <string name="delete_gagal">Delete Failed</string>
+    <string name="delete_msg_photo">Are you sure want to delete this photo?</string>
+    <string name="delete_msg_pesan">Are you sure want to delete this message?</string>
+    <string name="alert_harap_masukkan_foto_kendaraan_surat">Please input your vehicle and its documents photos.</string>
+
+    <!--CABANG TERDEKAT ACTIVITY-->
+    <string name="title_activity_cabang_terdekat">Nearest Branch</string>
+    <string name="nearest_branch_not_found">Nearest Branch is not found</string>
+    <string name="my_location">My Location</string>
+    <string name="data_cabang_tidak_ditemukan">The data of the branch is not found.</string>
+    <string name="cabang_terdekat_tidak_ditemukan">The data of the nearest branch is not found.</string>
+    <string name="yes_uc">YES</string>
+    <string name="no_uc">NO</string>
+    <string name="logout_alert">Are you sure want to logout?</string>
+    <string name="alert_gps_must_on">To use this feature, you must turn your GPS on, please activate your GPS.</string>
+
+    <!--KATALOG MOBIL BEKAS ACTIVITY-->
+    <string name="title_activity_katalog_mobil">Car Catalog</string>
+    <string name="catalog">Catalog</string>
+
+    <!--BAYAR ANGSURAN ACTIVITY-->
+    <string name="title_activity_bayar_angsuran">Pay Installment</string>
+    <string name="besar_angsuran">Installment Amount</string>
+    <string name="angsuran_bulan">Monthly Installment</string>
+    <string name="besar_pembayaran">Payment Amount</string>
+    <string name="bayar_angsuran_uc">PAY INSTALLMENT</string>
+    <string name="pin_uc">PIN</string>
+
+    <!--TEBUS KODE ACTIVITY-->
+    <string name="title_activity_tebus_kode_voucher_referal">Redeem Refferal Code</string>
+    <string name="title_activity_tebus_kode_voucher">Redeem Voucher Code</string>
+    <string name="kode_referal">Refferal Code</string>
+    <string name="kode_referal_alert">You have already entered your friend\'s refferal code.</string>
+    <string name="kode_voucher">Voucher Code</string>
+    <string name="tebus_kode_uc">REDEEM CODE</string>
+    <string name="redeem_via_voucher_gagal">Redeem via voucher failed</string>
+    <string name="redeem_via_voucher_berhasil">Redeem via voucher succeed</string>
+    <string name="redeem_via_refcode_gagal">Redeem via refferal code failed</string>
+    <string name="redeem_via_refcode_berhasil">Redeem via refferal code succeed</string>
+    <string name="kode_voucher_harus_sesuai">The number of voucher is not valid</string>
+    <string name="kode_referal_harus_sesuai">The number of refferal code is not valid</string>
+
+    <!--SIMULASI KREDIT TABEL ANGSURAN FRAGMENT-->
+    <string name="simulasi_kredit_uc">CREDIT SIMULATION</string>
+
+    <!--SIMULASI KREDIT ACTIVITY-->
+    <string name="title_activity_simulasi_kredit">Credit Simulation</string>
+    <string name="total_pinjaman">Total Loan</string>
+    <string name="total">Total</string>
+    <string name="masukkan_kebutuhan">Needed Amount</string>
+    <string name="bunga_pinjaman">Interest % (monthly)</string>
+    <string name="admin_fee">Admin Fee</string>
+    <string name="uang_muka_dp">Downpayment/DP %</string>
+    <string name="uang_muka">Downpayment</string>
+    <string name="tenor">Tenor(x)</string>
+    <string name="masukkan_tenor">Tenor</string>
+    <string name="angsuran_cicilan">Installment</string>
+    <string name="minimal_penghasilan">Minimal Income</string>
+    <string name="angsuran_pertama">First Installment :</string>
+    <string name="angsuran_selanjutnya">Next Installment :</string>
+    <string name="angsuran">Installment</string>
+
+    <!--SUARA KONSUMEN ACTIVITY-->
+    <string name="title_activity_suara_konsumen">Customer Voice</string>
+    <string name="jenis_surat">Type of Mail</string>
+    <string name="subject">Subject</string>
+    <string name="kirim_uc">SEND</string>
+    <string-array name="arr_suara_konsumen">
+        <item>Common Question</item>
+        <item>Feedback of Feature</item>
+        <item>Question of Feature</item>
+    </string-array>
+    <string name="pesan_berhasil_dikirim">Message has been sent</string>
+    <string name="isi_pesan">Message</string>
+    <string name="balasan_pesan">Message Reply</string>
+    <string name="tidak_ada_pesan">No message.</string>
+    <string name="harap_kolom_pesan_subjek_diisi">Please fill subject and message fields</string>
+
+    <!--TARIK CABANG ACTIVITY-->
+    <string name="title_activity_tarik_cabang">Tarik Cabang</string>
+    <string name="cara_pemakaian">Cara Top Up Kasir :\u0020</string>
+    <string name="cara_pemakaian_1">SECRET</string>
+    <string name="cara_pemakaian_2">1. Sebutkan kode Unik anda ke kasir</string>
+    <string name="cara_pemakaian_3">2. Bayar sesuai nominal top up anda</string>
+    <string name="cara_pemakaian_4">3. Kasir akan memprosese pembelian top up anda</string>
+    <string name="cara_pemakaian_5">Edu Kredit dapat dipakai untuk pembayaran transaksi.</string>
+
+    <string name="table_checkout_activity_intro">Meja CheckIn anda :\u0020</string>
+    <string name="table_checkout_activity_description">Anda sedang checkin, harus checkout terlebih dahulu</string>
+    <string name="table_checkout_activity_button">Checkout</string>
+
+
+    <!--Pengajuan Kredit Data Pekerjaan-->
+    <string name="title_activity_pengajuan_kredit_data_pekerjaan">Credit Submission</string>
+    <string name="data_pekerjaan">Job Data</string>
+    <string name="jenis_pekerjaan">Type of Job</string>
+    <string name="nama_perusahaan_usaha">Company/Instance name</string>
+    <string name="alamat_perusahaan_usaha">Company/Instance address</string>
+    <string name="tulis_komentar_anda_disini">Write your comment..</string>
+    <string name="telepon_kantor_usaha">Company/Instance telephone number</string>
+    <string-array name="arr_jenis_pekerjaan">
+        <item>Pegawai Negeri Sipil</item>
+        <item>Entrepreneurial</item>
+        <item>Private Employee</item>
+    </string-array>
+
+    <!--PENGAJUAN KREDIT INFORMASI KEAMANAN-->
+    <string name="title_activity_pengajuan_kredit_informasi_keamanan">Credit Submission</string>
+    <string name="informasi_keamanan">Emergency Contact Information</string>
+    <string name="nama_ibu_kandung">Mother\'s Name</string>
+    <string name="nama_kontak_darurat">Emergency Contact Name</string>
+    <string name="hubungan_kontak_darurat">Emergency Contact Relation</string>
+    <string name="alamat_kontak_darurat">Emergency Contact Address</string>
+    <string name="nomor_kontak_darurat">Emergency Contact Phone Number</string>
+
+    <!--PENGAJUAN KREDIT KELENGKAPAN DOKUMEN-->
+    <string name="title_activity_pengajuan_kredit_kelengkapan_dokumen">Credit Submission</string>
+    <string name="foto_kelengkapan_dokumen">Required Document Photo</string>
+    <string name="foto_identitas_ktp">Identity/KTP Photo</string>
+    <string name="form_tambah_aset">Add Asset Form</string>
+    <string name="foto_gagal_dibaca">Failed to read the photo that you have been set, please use another photo.</string>
+    <string name="foto_gagal_camera">Failed to get photo data, please try again.</string>
+    <string name="harap_masukkan_foto_ktp">Please add KTP Photo</string>
+    <string name="harap_masukkan_foto_kelengkapan_aset">Please add your required asset\'s photos</string>
+    <string name="selemat_pengeajuan_berhasil"> Your credit application is successful, our team will contact you within 1 working day maximum.</string>
+
+    <!--DAFTAR ANGSURAN ACTIVITY-->
+    <string name="title_activity_daftar_angsuran">Pay Installment</string>
+    <string name="pilih_angsuran">Select Installment</string>
+    <string name="no_agreement">No.Agreement :\u0020</string>
+    <string name="order_id">Order ID :\u0020</string>
+    <string name="not_in_branch_message">This product is currently not available in your branch, the shown product is in nearest branch.</string>
+
+
+
+    <string name="user_id">User ID :\u0020</string>
+    <string name="application_id_confins">Application ID Confins:\u0020</string>
+    <string name="description">Description :\u0020</string>
+    <string name="order_status">Order Status :\u0020</string>
+
+
+    <string name="product_name">Product Name :\u0020</string>
+    <string name="created_at">Create Date :\u0020</string>
+
+    <!--KATALOG JASA ACTIVITY-->
+    <string name="title_activity_katalog_jasa">Service Catalog</string>
+    <string name="pendidikan">Education</string>
+
+    <!--KATALOG BARANG TABS ACTIVITY-->
+    <string name="title_activity_katalog_barang">List Menu</string>
+
+    <!--KATALOG KENDARAAN ACTIVITY-->
+    <string name="title_activity_katalog_kendaraan">Motorcycle Catalog</string>
+
+    <!--KATALOG JASA ITEM ACTIVITY-->
+    <string name="title_activity_katalog_jasa_item">Service Catalog</string>
+
+    <!--DATA KREDIT SAYA ACTIVITY-->
+    <string name="title_activity_data_kredit_saya">Job Data</string>
+    <string name="edit_uc">EDIT</string>
+    <string name="done_uc">DONE</string>
+    <string name="data_kreditku">My Credit Data</string>
+    <string name="asetku">My Asset</string>
+    <string name="asetku_max">Sorry, the number of your added asset exceeds the maximum limit.</string>
+    <string name="data_kredit_anda_berhasil_disimpan">Your credit data has been saved</string>
+    <string name="data_kredit_anda_gagal_disimpan">Failed to save your credit data</string>
+
+    <!--KREDITKU ACTIVITY-->
+    <string name="title_activity_kreditku">My Credit</string>
+    <string name="pengajuanku">My Submissions</string>
+    <string name="angsuranku">My Installments</string>
+    <string name="tracking_order">Tracking Order</string>
+    <string name="relogin_berhasil">Re-login berhasil</string>
+
+    <!--FRAGMENT ANGSURANKU-->
+    <string name="produk">Product :\u0020</string>
+    <string name="belum_ada_product">No product yet.</string>
+    <string name="jatuh_tempo">Due date :\u0020</string>
+    <string name="detail">Detail</string>
+    <string name="angsuran_bulan_ini">This month installment :\u0020</string>
+    <string name="denda">Ransom :\u0020</string>
+    <string name="bayar_memakai_kptunai">Pay via K-Voucher</string>
+    <string name="detail_no_agreement">No.Agreement</string>
+    <string name="detail_denda">Ransom</string>
+    <string name="masukkan_nominal">Input amount</string>
+    <string name="title_detail_agreement">Agreement Detail</string>
+    <string name="tanggal_terakhir_pembayaran">Last Paid Date</string>
+    <string name="angsuran_ke">For Installment </string>
+    <string name="batas_tanggal_pembayaran">Due Payment Date</string>
+
+    <!--FRAGMENT PENGAJUANKU-->
+    <string name="status">Status :\u0020</string>
+
+    <!--KATALOG KPR ACTIVITY-->
+    <string name="title_activity_katalog_kpr">KPR Catalog</string>
+
+    <!--KATALOG MODAL KERJA ACTIVITY-->
+    <string name="title_activity_katalog_modal_kerja">Venture Capital Catalog</string>
+
+    <!--SEARCH ACTIVITY-->
+    <string name="title_activity_search">Search Product</string>
+
+    <!--DATA KREDIT ASETKU ACTIVITY-->
+    <string name="title_activity_datakreditasetku">My Asset and Credit Data</string>
+    <string name="title_activity_asetku">My Asset</string>
+    <string name="merk_asetku">Brand :\u0020</string>
+    <string name="tipe_asetku">Type :\u0020</string>
+    <string name="tipe_aset">Asset Type</string>
+    <string name="nilai_otr_asetku">OTR price :\u0020</string>
+    <string name="hapus_uc">DELETE</string>
+    <string name="submit_uc">SUBMIT</string>
+    <string name="simpan_aset_berhasil">Your asset has been saved</string>
+    <string name="simpan_aset_gagal">Failed to save your asset</string>
+
+    <!--COMING SOON ACTIVITY-->
+    <string name="coming_soon_uc">COMING SOON</string>
+    <string name="start_exploring">Start Exploring</string>
+    <string name="comming_soon_text">Enjoy the easiness to top your K-Voucher up via Eduplex merchants.</string>
+
+    <!--FORM KPR ACTIVITY-->
+    <string name="activity_form_kpr_title">KPR FORM</string>
+
+    <!--FORM INQUIRY ACTIVITY-->
+    <string name="activity_form_inquiry">Inquiry Form</string>
+    <string name="pekerjaan">Job</string>
+    <string name="pemilik_aset">Asset Owner</string>
+    <string name="tahun">Year</string>
+    <string name="npwp">NPWP</string>
+    <string name="merek">Brand</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="car_type">Car Type</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="pilih_tipe_pekerjaan">Slect job type :\u0020</string>
+    <string name="pilih_tipe_mobil">Select car type :\u0020</string>
+    <string name="pilih_pemilik_aset">Select asset owner :\u0020</string>
+    <string name="pilih_manufacturer">Select manufacturer :\u0020</string>
+    <string name="get_tenor">Calculate Installment</string>
+
+    <!--FORM PROPERTY KPR ACTIVITY-->
+    <string name="data_property">Property Data</string>
+    <string name="penjual_property">Property Seller</string>
+    <string name="nama_penjual_developer">Seller/Developer Name</string>
+    <string name="telepon_penjual">Seller Phone Number</string>
+    <string name="tipe_property">Property Type</string>
+    <string name="tujuan_pembiayaan">Financing Purpose</string>
+    <string name="nama_perumahan">Housing Name</string>
+    <string name="lt_lb">LT/LB</string>
+    <string name="status_tanah">Land Status</string>
+    <string name="imb">IMB</string>
+    <string name="ada">Yes</string>
+    <string name="tidak">No</string>
+    <string name="harga_property">Property Price</string>
+    <string name="jumlah_kredit">Credit Amount</string>
+
+    <string-array name="arr_property">
+        <item>Developer</item>
+        <item>Perorangan</item>
+    </string-array>
+
+    <string-array name="arr_tujuan_pembiayaan">
+        <item>Rumah tinggal</item>
+        <item>Ruko</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="arr_tipe_property">
+        <item>Beli baru</item>
+        <item>Renovasi</item>
+        <item>Beli bekas</item>
+        <item>Refinancing</item>
+        <item>Konstruksi</item>
+    </string-array>
+
+    <string-array name="arr_status_tanah">
+        <item>Hak milik</item>
+        <item>HGB/Strata tittle</item>
+        <item>Sertifikat pecahan</item>
+        <item>Sertifikat induk developer</item>
+        <item>Girik</item>
+    </string-array>
+
+    <!--VERIFIKASI REGISTER ACTIVITY-->
+    <string name="sms_verifikasi">SMS Verification</string>
+    <string name="verifikasi_uc">VERIFY</string>
+    <string name="get_verification_code">GET VERIFICATION CODE</string>
+    <string name="masukkan_kode_verifikasi">Enter your verification code</string>
+    <string name="try_again_sms_verification">Resend verification code</string>
+    <string name="err_region_not_found">Region data not found</string>
+
+    <string-array name="arr_npwp">
+        <item>NPWP PRIBADI</item>
+        <item>NPWP BADAN</item>
+    </string-array>
+
+    <string name="err_agreement_payment_2">Error in server, transaction failed.</string>
+    <string name="err_agreement_payment_3">There is an error while connecting to server, please try again later.</string>
+
+    <!-- new addition for eduplex -->
+    <!--Table Activity -->
+    <string name="table_activity_title">Eduplex Table</string>
+    <string name="table_activity_choose_table">Choose Your Table</string>
+    <string name="table_activity_description">Choose your table based on above map</string>
+
+</resources>
+
+

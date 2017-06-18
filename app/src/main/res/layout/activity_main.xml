@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp">
+
+                    <include
+                        android:id="@+id/toolbar"
+                        layout="@layout/item_navigation_toolbar" />
+
+                    <com.quinny898.library.persistentsearch.SearchBox
+                        android:id="@+id/searchBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-16dp"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginRight="-8dp"
+                        android:layout_marginTop="-8dp"
+                        android:padding="0dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--app:headerLayout="@layout/item_navigation_header"-->
+            <!--app:itemBackground="@drawable/bg_nav_background_state"-->
+            <!--app:itemIconTint="@drawable/bg_nav_text_state"-->
+            <!--app:itemTextColor="@drawable/bg_nav_text_state"-->
+            <!--app:menu="@menu/drawer"-->
+            <!--app:theme="@style/SubHeaderNavMenu"-->
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_navigation_header" />
+                    <include layout="@layout/item_side_menu" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlOverlayScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/tab_bar"
+        android:background="@color/black_overlay"
+        android:clickable="true"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+</RelativeLayout>

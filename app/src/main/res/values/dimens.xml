@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Values -->
+    <dimen name="value_125dp">125dp</dimen>
+    <dimen name="value_100dp">100dp</dimen>
+    <dimen name="value_350dp">350dp</dimen>
+    <dimen name="value_250dp">250dp</dimen>
+    <dimen name="value_200dp">200dp</dimen>
+    <dimen name="value_15dp">15dp</dimen>
+    <dimen name="value_170dp">170dp</dimen>
+    <dimen name="value_180dp">180dp</dimen>
+    <dimen name="value_150dp">150dp</dimen>
+    <dimen name="value_80">80dp</dimen>
+    <dimen name="value_60">60dp</dimen>
+    <dimen name="value_56">56dp</dimen>
+    <dimen name="value_large">50dp</dimen>
+    <dimen name="value_xlarge">56dp</dimen>
+    <dimen name="value_xxlarge">82dp</dimen>
+    <dimen name="value_48dp">48dp</dimen>
+    <dimen name="value_40dp">40dp</dimen>
+    <dimen name="value_36dp">36dp</dimen>
+    <dimen name="value_xxbig">40dp</dimen>
+    <dimen name="value_xbig">30dp</dimen>
+    <dimen name="value_30">30dp</dimen>
+    <dimen name="value_20">20dp</dimen>
+    <dimen name="value_25">25dp</dimen>
+    <dimen name="value_big">20dp</dimen>
+    <dimen name="value_normal">16dp</dimen>
+    <dimen name="value">10dp</dimen>
+    <dimen name="value_small">5dp</dimen>
+    <dimen name="value_xsmall">3dp</dimen>
+    <dimen name="tab_bar">48dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_xlarge">26sp</dimen>
+    <dimen name="text_large">23sp</dimen>
+    <dimen name="text_xbig">21sp</dimen>
+    <dimen name="text_big">19sp</dimen>
+    <dimen name="text_normal">17sp</dimen>
+    <dimen name="text">15sp</dimen>
+    <dimen name="text_small">13sp</dimen>
+    <dimen name="text_xsmall">11sp</dimen>
+
+    <!--Circle Item-->
+
+    <!--Sliding menu-->
+    <dimen name="sliding_menu_header_height">120dp</dimen>
+    <dimen name="sliding_menu_profile_pic">65dp</dimen>
+    <dimen name="profile_pic_general">100dp</dimen>
+
+    <!-- ListView Divider -->
+
+    <!-- Listview item -->
+
+    <!-- Padding & Margins -->
+    <dimen name="padding">@dimen/value</dimen>
+    <dimen name="padding_normal">@dimen/value_normal</dimen>
+    <dimen name="padding_xbig">@dimen/value_xbig</dimen>
+    <dimen name="padding_xsmall">@dimen/value_xsmall</dimen>
+    <dimen name="padding_big">@dimen/value_big</dimen>
+    <dimen name="padding_small">@dimen/value_small</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin">@dimen/value</dimen>
+    <dimen name="margin_large">@dimen/value_large</dimen>
+    <dimen name="margin_xlarge">@dimen/value_xlarge</dimen>
+    <dimen name="margin_xxlarge">@dimen/value_xxlarge</dimen>
+    <dimen name="margin_big">@dimen/value_big</dimen>
+    <dimen name="margin_xbig">@dimen/value_xbig</dimen>
+    <dimen name="margin_normal">@dimen/value_normal</dimen>
+    <dimen name="margin_small">@dimen/value_small</dimen>
+    <dimen name="margin_xsmall">@dimen/value_xsmall</dimen>
+    <dimen name="margin_xxbig">@dimen/value_xxbig</dimen>
+    <dimen name="margin_line_timeline">85dp</dimen>
+
+    <!-- Values -->
+    <integer name="nama_lengkap_max_length">50</integer>
+    <integer name="alamat_max_length">200</integer>
+    <integer name="no_ktp_max_length">16</integer>
+    <integer name="sms_code_max_length">4</integer>
+    <integer name="no_ktp_min_length">16</integer>
+    <integer name="kode_pos_max_length">5</integer>
+    <integer name="kode_pos_min_length">5</integer>
+    <integer name="tahun_max_length">4</integer>
+    <integer name="tenor_kpr_min">60</integer>
+    <integer name="tenor_kpr_max">240</integer>
+    <integer name="no_hp_max_length">13</integer>
+    <integer name="no_hp_min_length">10</integer>
+    <integer name="telp_max_length">11</integer>
+    <integer name="telp_min_length">7</integer>
+    <integer name="pin_max_length">6</integer>
+    <integer name="sms_verifikasi_max_length">6</integer>
+    <integer name="pin_min_length">6</integer>
+    <integer name="password_min_length">6</integer>
+    <integer name="password_max_length">50</integer>
+    <integer name="jawaban_keamanan_max_length">50</integer>
+    <integer name="email_max_length">100</integer>
+    <integer name="nominal_max_length">10</integer>
+    <integer name="kode_referal_max_length">10</integer>
+    <integer name="kode_voucher_max_length">20</integer>
+    <integer name="kota_max_length">30</integer>
+    <integer name="nama_perusahaan_max_length">50</integer>
+    <integer name="subject_max_length">50</integer>
+    <integer name="comment_max_length">100</integer>
+    <integer name="comment_max_line">3</integer>
+
+    <integer name="fee_with_format_max_length">13</integer>
+    <integer name="tenor_max_length">3</integer>
+    <integer name="nominal_with_format_max_length">17</integer>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    android:background="@drawable/bg_katalog_selected_installment_yellow"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_big"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvItemDetailTenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/install_6"
+        android:textColor="@color/text_default"
+        android:textSize="@dimen/text_xlarge" />
+
+    <TextView
+        android:id="@+id/tvItemDetailInstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/sample_amount"
+        android:textColor="@color/text_default"
+        android:textSize="@dimen/text" />
+</LinearLayout>

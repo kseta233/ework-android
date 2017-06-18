@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical"
+    tools:context="com.ework.eduplex.activities.SearchActivity">
+
+    <include layout="@layout/item_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_large"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/white"
+        android:foreground="@drawable/bg_border_text_area">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="@dimen/value_25"
+            android:layout_height="@dimen/value_25"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:src="@mipmap/search" />
+
+        <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+        <AutoCompleteTextView
+            android:id="@+id/actvSearchBar"
+            android:nextFocusUp="@id/actvSearchBar"
+            android:nextFocusLeft="@id/actvSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/MyEditTextStyle"
+            android:layout_toEndOf="@+id/imageView10"
+            android:layout_toLeftOf="@+id/tvDeleteSearch"
+            android:layout_toRightOf="@+id/imageView10"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@color/transparent"
+            android:hint="@string/search"
+            android:textColorHint="@color/text_default"
+            android:textColor="@color/text_dark"
+            android:popupBackground="@color/white"
+            android:textSize="@dimen/text_normal"
+            android:ems="10">
+
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:id="@+id/tvDeleteSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:src="@mipmap/ic_close_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/padding"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:scrollbars="none" />
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/err_tidak_ada_data"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

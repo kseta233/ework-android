@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--CATEGORY 1-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/eduplex_yellow_main"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding_small"
+            android:text="@string/nav_group_eduplex"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <LinearLayout
+            android:id="@+id/llMenuWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/simulasi_kredit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="@string/nav_menu_web"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+
+
+        <LinearLayout
+            android:id="@+id/llMenuLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/cabang" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="@string/nav_menu_cabang_terdekat"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+
+        <!--CATEGORY 2-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/eduplex_yellow_main"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding_small"
+            android:textStyle="bold"
+            android:text="@string/nav_group_dukungan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llFAQ"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="?android:selectableItemBackground"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/padding_small">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/value_20"-->
+                <!--android:layout_height="@dimen/value_20"-->
+                <!--android:layout_marginLeft="@dimen/margin_small"-->
+                <!--android:src="@mipmap/faq" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/padding_small"-->
+                <!--android:text="@string/nav_menu_faq"-->
+                <!--android:layout_marginLeft="@dimen/margin_small"-->
+                <!--android:textColor="@color/text_default"-->
+                <!--android:textSize="@dimen/text" />-->
+        <!--</LinearLayout>-->
+
+        <include layout="@layout/item_line" />
+
+
+        <LinearLayout
+            android:id="@+id/llPengaturanAplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/pengaturan_aplikasi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="@string/nav_menu_pengaturan_aplikasi"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text"/>
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+
+        <LinearLayout
+            android:id="@+id/llAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/tentang" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="@string/nav_menu_about"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+
+        <LinearLayout
+            android:id="@+id/llShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/share" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="@string/nav_menu_share"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_20"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@mipmap/logout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:text="@string/nav_menu_logout"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textColor="@color/text_default"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+
+    </LinearLayout>
+</ScrollView>

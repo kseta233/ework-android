@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nav_group_eduplex">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/simulasi_kredit"
+                    android:checked="false"
+                    android:icon="@mipmap/simulasi_kredit"
+                    android:title="@string/nav_menu_web" />
+                <!--<item-->
+                    <!--android:id="@+id/kreditku"-->
+                    <!--android:checked="false"-->
+                    <!--android:icon="@mipmap/kreditku"-->
+                    <!--android:title="@string/nav_menu_kreditku" />-->
+                <!--<item-->
+                    <!--android:id="@+id/data_kreditku"-->
+                    <!--android:checked="false"-->
+                    <!--android:icon="@mipmap/data_kreditku"-->
+                    <!--android:title="@string/nav_menu_data_kreditku" />-->
+                <item
+                    android:id="@+id/cabang_terdekat"
+                    android:checked="false"
+                    android:icon="@mipmap/cabang"
+                    android:title="@string/nav_menu_cabang_terdekat" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_group_dukungan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/suara_konsumen"
+                    android:checked="false"
+                    android:icon="@mipmap/suara_konsumen"
+                    android:title="@string/nav_menu_suara_konsumen" />
+                <item
+                    android:id="@+id/kotak_surat"
+                    android:checked="false"
+                    android:icon="@mipmap/kotak_surat"
+                    android:title="@string/nav_menu_kotak_surat" />
+                <item
+                    android:id="@+id/faq"
+                    android:checked="false"
+                    android:icon="@mipmap/faq"
+                    android:title="@string/nav_menu_faq" />
+                <!--<item-->
+                    <!--android:id="@+id/hubungi_kami"-->
+                    <!--android:checked="false"-->
+                    <!--android:icon="@mipmap/hubungi"-->
+                    <!--android:title="@string/nav_menu_hubungi_kami" />-->
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_group_aplikasi">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/pengaturan_aplikasi"
+                    android:checked="false"
+                    android:icon="@mipmap/pengaturan_aplikasi"
+                    android:title="@string/nav_menu_pengaturan_aplikasi" />
+                <item
+                    android:id="@+id/about"
+                    android:checked="false"
+                    android:icon="@mipmap/tentang"
+                    android:title="@string/nav_menu_about" />
+                <item
+                    android:id="@+id/share"
+                    android:checked="false"
+                    android:icon="@mipmap/share"
+                    android:title="@string/nav_menu_share" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@mipmap/logout"
+            android:title="@string/nav_menu_logout" />
+    </group>
+
+</menu>

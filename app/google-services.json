@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "15471771459",
+    "project_id": "kredit-plus-mobile-1315"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15471771459:android:f0c635732feee1b2",
+        "android_client_info": {
+          "package_name": "com.kreditplus.kpm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2Lvw8wv7ctHMdD8__B9jG-vkiuqzFnWg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-78497269-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

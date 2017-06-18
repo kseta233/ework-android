@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context="com.ework.eduplex.activities.TarikCabangActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/item_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/include2"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal">
+
+                <TextView
+                    android:id="@+id/tvCara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:text="@string/cara_pemakaian"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_xbig"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCara1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/cara_pemakaian_1"
+                    android:textColor="@color/text_default"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_xlarge" />
+
+                <TextView
+                    android:id="@+id/tvCara2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/cara_pemakaian_2"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/tvCara3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/cara_pemakaian_3"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/tvCara4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/cara_pemakaian_4"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_big" />
+
+                <TextView
+                    android:id="@+id/tvCara5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:padding="@dimen/padding_small"
+                    android:text="@string/cara_pemakaian_5"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/text_big" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_large"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/bg_border_rectangle_blue_fill_click">
+
+                    <TextView
+                        android:id="@+id/tvChecktrans"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Check Transaksi"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

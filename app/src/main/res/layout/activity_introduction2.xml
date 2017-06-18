@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    tools:context=".activities.loginandregister.IntroductionActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_above="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:src="@mipmap/ic_launcher_app" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpIntroduction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingLeft="@dimen/value_xxbig"
+        android:paddingRight="@dimen/value_xxbig"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_36dp"
+                android:background="@drawable/bg_rectangle_blue_transparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/sign_up_uc"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_36dp"
+                android:background="@drawable/bg_rectangle_blue_transparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/login_uc"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvLoginAsGuest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_36dp"
+                android:background="@drawable/bg_rectangle_blue_transparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Change IP if server not found"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context="com.ework.eduplex.activities.katalog.KatalogItemDetailActivity">
+
+
+    <include layout="@layout/item_toolbar"
+        android:id="@+id/include12" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xsmall"
+                    android:layout_marginLeft="@dimen/margin_xsmall"
+                    android:layout_marginRight="@dimen/margin_xsmall"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="388dp"
+                        android:layout_height="710dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvItemDetailName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_toLeftOf="@+id/tvItemDetailHarga"
+                                android:padding="@dimen/padding"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_default"
+                                android:textSize="@dimen/text" />
+
+                            <TextView
+                                android:id="@+id/tvItemDetailHarga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/padding"
+                                android:singleLine="true"
+                                android:textStyle="bold"
+                                android:textColor="@color/text_default"
+                                android:textSize="@dimen/text" />
+                        </RelativeLayout>
+
+                        <!--VIEW PAGER-->
+                        <RelativeLayout
+                            android:id="@+id/rlItemDetailPagerContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/value_350dp">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/vpItemDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+                            <com.viewpagerindicator.CirclePageIndicator
+                                android:id="@+id/cpiItemDetail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="top"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:padding="@dimen/padding" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding"
+                            android:paddingTop="@dimen/padding"
+                            android:text="@string/description_up"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/text" />
+
+                        <TextView
+                            android:id="@+id/tvItemDetailDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding"
+                            android:textColor="@color/text_default"
+                            android:textSize="@dimen/text_small" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_large"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:background="@drawable/bg_border_rectangle_blue_fill_click">
+
+                    <TextView
+                        android:id="@+id/tvPayCheckOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Pay With Top Up"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

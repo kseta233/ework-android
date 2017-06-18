@@ -1,0 +1,90 @@
+buildscript {
+    repositories {
+        maven {
+//            url 'https://maven.fabric.io/public'
+        }
+    }
+
+    dependencies {
+//        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+//apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '24.0.3'
+
+    defaultConfig {
+        applicationId "com.ework.eduplex"
+
+        manifestPlaceholders = [manifestApplicationId          : "${applicationId}",
+                                onesignal_app_id               : "3cf61a8b-894f-41da-8360-16c9191d2c15",
+                                onesignal_google_project_number: "15471771459"]
+
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.1"
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        aaptOptions {
+            ignoreAssetsPattern '`'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+//    maven {
+//        url 'https://maven.fabric.io/public'
+//    }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+//    compile 'com.onesignal:OneSignal:2.+@aar'
+//
+//    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+//        transitive = true;
+//    }
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.google.android.gms:play-services-gcm:10.0.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.github.ParkSangGwon:TedPermission:v1.0.8'
+    compile 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+}

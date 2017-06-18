@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.setting.PengaturanAplikasiActivity"
+    android:background="@color/page_background">
+
+    <include layout="@layout/item_toolbar"
+        android:id="@+id/include22" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/include22">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/pengaturan_bahasa"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/text_dark"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPengaturanBahasa"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/pengaturan_notifikasi"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/text_dark"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_line"
+                    android:padding="@dimen/padding">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/notifikasi_promo"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/text_default"
+                        android:layout_toLeftOf="@+id/switchNotifikasiPromo"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchNotifikasiPromo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/notifikasi_angsuran"
+                        android:textColor="@color/text_default"
+                        android:textSize="@dimen/text"
+                        android:layout_toLeftOf="@+id/switchNotifikasiAngsuran"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchNotifikasiAngsuran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/data_pengajuan_saya"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/text_dark"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/simpan_data_pengajuan_saya"
+                        android:singleLine="true"
+                        android:textColor="@color/text_default"
+                        android:textSize="@dimen/text"
+                        android:layout_toLeftOf="@+id/switchDataPengajuanSaya"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchDataPengajuanSaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin_xsmall"
+            android:layout_marginRight="@dimen/margin_xsmall"
+            android:layout_marginBottom="@dimen/margin_xsmall"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/pengaturan_masuk_aplikasi"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/text_dark"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/selalu_login"
+                        android:singleLine="true"
+                        android:textColor="@color/text_default"
+                        android:textSize="@dimen/text"
+                        android:layout_toLeftOf="@+id/switchSelaluLogin"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switchSelaluLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_xsmall"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout2">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/llUbahPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_bottom_line_white">
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:padding="@dimen/padding"-->
+                            <!--android:text="@string/title_activity_ubah_password"-->
+                            <!--android:textSize="@dimen/text"-->
+                            <!--android:textColor="@color/text_default"-->
+                            <!--android:drawableRight="@mipmap/ic_chevron_black"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:background="?android:selectableItemBackground"-->
+                            <!--android:id="@+id/tvUbahPassword"-->
+                            <!--android:clickable="true"/>-->
+                    </LinearLayout>
+
+                </LinearLayout>
+        </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

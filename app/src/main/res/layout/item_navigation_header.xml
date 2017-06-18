@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rlHeaderMain"
+    android:layout_height="@dimen/sliding_menu_header_height"
+    android:background="@drawable/bg_bottom_line"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/sliding_menu_profile_pic"
+        android:layout_height="@dimen/sliding_menu_profile_pic"
+        android:src="@mipmap/profile_icon"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/profile_image"
+        android:layout_toLeftOf="@+id/header_setting">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_name"
+            android:textSize="@dimen/text"
+            android:singleLine="true"
+            android:textColor="@color/text_blue"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:id="@+id/username" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kode_referal_header"
+            android:gravity="left"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_id"
+            android:textStyle="bold"
+            android:id="@+id/user_id"
+            android:gravity="left"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_blue" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/header_setting"
+        android:layout_width="@dimen/value_xbig"
+        android:layout_height="@dimen/value_xbig"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:padding="@dimen/padding_xsmall"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:src="@mipmap/user_setting"/>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/eduplex_yellow_main</item>
+        <item name="android:colorPrimaryDark">@color/eduplex_yellow_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/eduplex_yellow_dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <!--STYLE TO CUSTOMIZE FONT-->
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+
+        <!-- Customize your theme here. -->
+        <!--STYLE FOR ACTION MENU COLOR (i.e LANJUT SIMPAN etc)-->
+        <item name="actionMenuTextColor">@color/blue</item>
+        <item name="android:actionMenuTextColor">@color/blue</item>
+
+        <!--STYLE FOR GENERAL ILLUMINATION (i.e in edittext)-->
+        <item name="colorAccent">@color/eduplex_yellow_main</item>
+        <item name="colorControlNormal">@color/graydark</item>
+        <item name="colorControlActivated">@color/eduplex_yellow_main</item>
+    </style>
+
+    <!--STYLE FOR TEXTVIEW AND EDITTEXT AND ETC-->
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--STYLE FOR ACTION BUTTON IN TOGGLE IN TOOLBAR (i.e Navigation toggle icon)-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/graydark_high</item>
+    </style>
+
+    <!--STYLE FOR SUBHEADER COLOR NAV MENU-->
+    <style name="SubHeaderNavMenu" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/text_blue</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--STYLE FOR TOOLBAR BACK ARROW-->
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/graydark_high</item>
+        <item name="android:textColorPrimary">@color/blue</item>
+    </style>
+
+    <!--STYLE FOR TEXTINPUT LAYOUT-->
+    <style name="MyTextInputLayoutStyle" parent="@style/Theme.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textColorPrimary">@color/text_default</item>
+        <item name="colorAccent">@color/text_default</item>
+        <item name="colorControlNormal">@color/text_default</item>
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
+    <!--STYLE FOR AutoCompleteTextView-->
+    <style name="MyEditTextStyle" parent="Base.Widget.AppCompat.ListView">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
+</resources>

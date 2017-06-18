@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivItemBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_xbig"
+        android:layout_width="@dimen/value_170dp"
+        android:layout_height="@dimen/value_xxbig"
+        android:background="@drawable/bg_border_rectangle_gray">
+            <TextView
+                android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lihat_selengkapnya"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:textSize="@dimen/text"
+            android:textColor="@color/text_white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

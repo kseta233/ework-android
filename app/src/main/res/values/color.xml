@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SYSTEM COLOR-->
+
+    <!--KPM MAIN COLOR-->
+    <color name="eduplex_yellow_dark">#FF01A2DD</color>
+    <color name="eduplex_yellow_main">#2196F3</color>
+    <color name="eduplex_red_main">#FFE31B23</color>
+    <color name="eduplex_blue_main">#FF01A2DD</color>
+    <color name="eduplex_yellow_main_transparent">#BFCFFF</color>
+    <color name="eduplex_yellow_grad_start">#BFCFFF</color>
+    <color name="eduplex_yellow_grad_end">#BFCFFF</color>
+
+    <!--KPM CATALOG COLOR-->
+    <color name="kpm_barang">#FFE31B23</color>
+    <color name="kpm_kendaraan">#FF01A2DD</color>
+    <color name="kpm_mobil">#FFF48F1C</color>
+    <color name="kpm_jasa">#FFE31B23</color>
+    <color name="kpm_modal_kerja">#FF01A2DD</color>
+    <color name="kpm_kpr">#FFF48F1C</color>
+
+    <!--PAGE BACKGROUND-->
+    <color name="page_background">@color/graylight</color>
+    <color name="gray_line">@color/gray</color>
+
+    <!--TABS-->
+    <color name="tab_selected_text">@color/text_blue</color>
+    <color name="tab_unselected_text">@color/blue_semi_transparent</color>
+    <color name="tab_indicator">@color/eduplex_blue_main</color>
+
+    <!--TEXT-->
+    <color name="text_default">@color/graydark</color>
+    <color name="text_dark">@color/graydark_high</color>
+    <color name="text_blue">@color/blue</color>
+    <color name="text_yellow">@color/eduplex_yellow_main</color>
+    <color name="text_white">@color/white</color>
+    <color name="text_red">@color/red</color>
+
+    <!--NAVIGATION MENU-->
+    <color name="nav_menu_bg_checked">@color/blue_semi_transparent</color>
+    <color name="nav_menu_text_unchecked">@color/graydark_high</color>
+    <color name="nav_menu_text_checked">@color/blue</color>
+
+    <!--COLORS-->
+    <color name="blue">#FF19AAE0</color>
+    <color name="blue_semi_transparent">#AA19AAE0</color>
+    <color name="red">#FFE5242D</color>
+    <color name="graydark">#777</color>
+    <color name="graydark_high">#555</color>
+    <color name="gray">#cccccc</color>
+    <color name="graylight">#eeeeee</color>
+    <color name="graylight_double">#f7f7f7</color>
+    <color name="white">#fff</color>
+    <color name="white_alpha_high">#44ffffff</color>
+    <color name="white_alpha_medium">#66ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_transparent">#55FFFFFF</color>
+</resources>

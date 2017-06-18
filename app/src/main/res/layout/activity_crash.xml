@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <include layout="@layout/item_navigation_toolbar"
+        android:id="@+id/include20" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/include20">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_large"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_xbig"
+            android:gravity="center"
+            android:text="@string/maaf_terjadi_kesalahan_uc"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+        android:layout_above="@+id/tvBack"
+        android:layout_below="@+id/llContent"
+        android:layout_weight="0.07">
+
+        <TextView
+            android:id="@+id/tvErrMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_normal" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:gravity="center"
+        android:text="@string/back_uc"
+        android:textStyle="bold"
+        android:padding="@dimen/padding"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@color/eduplex_blue_main"
+        android:textSize="@dimen/text_normal" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
